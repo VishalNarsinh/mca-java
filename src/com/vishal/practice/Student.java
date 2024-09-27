@@ -82,9 +82,12 @@ public class Student {
 //            max.putData();
 //        }
         Student max = new Student();
-        for(Student student: students){
-            max  = max.findMax(student);
+        for (int i = 0; i < students.length; i++) {
+            max = max.findMax(students[i]);
         }
+//        for(Student student: students){
+//            max  = max.findMax(student);
+//        }
         max.putData();
     }
 }
