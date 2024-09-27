@@ -56,7 +56,7 @@ public class Student {
         return (this.total>student.total)?this:student;
     }
 
-    public static Student findMaxOfAll(Student[] students){
+    public static Student findMax(Student[] students){
         Student max = new Student();
         for(Student student : students){
             if(student.total>max.total)
@@ -77,7 +77,7 @@ public class Student {
             students[i].putData();
         }
 //        Student max = Student.findMaxTotalUsingStream(students);
-//        Student max = Student.findMaxOfAll(students);
+//        Student max = Student.findMax(students);
 //        if(max!=null){
 //            max.putData();
 //        }
