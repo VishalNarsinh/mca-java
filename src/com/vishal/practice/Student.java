@@ -78,13 +78,13 @@ public class Student {
         }
 //        Student max = Student.findMaxTotalUsingStream(students);
 //        Student max = Student.findMaxOfAll(students);
+//        if(max!=null){
+//            max.putData();
+//        }
         Student max = new Student();
         for(Student student: students){
             max  = max.findMax(student);
         }
-//        if(max!=null){
-//            max.putData();
-//        }
         max.putData();
     }
 }
