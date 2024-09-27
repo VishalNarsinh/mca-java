@@ -82,6 +82,9 @@ public class Student {
         for(Student student: students){
             max  = max.findMax(student);
         }
+//        if(max!=null){
+//            max.putData();
+//        }
         max.putData();
     }
 }
