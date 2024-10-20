@@ -14,7 +14,7 @@ public class Number {
     }
 
     public static void main(String[] args) {
-        Number number1 = new Number(10,20);
+        Object number1 = new Number(10,20);
         Number number2 = new Number(10,20);
         if(number1.equals(number2)) {
             System.out.println("Numbers are equal");

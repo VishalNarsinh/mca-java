@@ -10,8 +10,12 @@ class Student{
     private static int count = 0;
 
     static {
-        System.out.println("Student class is loaded");
+        System.out.println("Student class is loaded 1");
     }
+    static {
+        System.out.println("Student class is loaded 2");
+    }
+
 
     public Student(int id){
         this.id = id;
@@ -38,15 +42,22 @@ class Student{
 public class DemoStudent {
 
     static {
-        System.out.println("DemoStudent class is loaded");
+        System.out.println("DemoStudent class is loaded 1");
+    }
+    static {
+        System.out.println("DemoStudent class is loaded 2");
     }
     public static void main(String[] args) {
+        System.out.println("Demo student main method started");
         Student student1 = new Student(1);
-        student1.getData();
-        student1.putData();
+//        student1.getData();
+//        student1.putData();
         Student student2 = new Student(2);
-        student2.getData();
-        student2.putData();
+//        student2.getData();
+//        student2.putData();
         Student.countStud();
+        Student student3 = student1;
+        System.out.println(student1.equals(student2));
+        System.out.println(student1.equals(student3));
     }
 }
