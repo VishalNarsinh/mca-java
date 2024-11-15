@@ -2,10 +2,10 @@ package com.vishal.practical_assignment5;
 
 public class Person {
     private int id;
-    private int name;
+    private String name;
     private int age;
 
-    public Person(int id, int name, int age) throws Exception {
+    public Person(int id, String  name, int age) throws Exception {
         this.id = id;
         this.name = name;
         if(age>100)
@@ -15,7 +15,7 @@ public class Person {
 
     public static void main(String[] args) {
         try {
-            Person p1 = new Person(1, 2, 101);
+            Person p1 = new Person(1, "Abc", 101);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
