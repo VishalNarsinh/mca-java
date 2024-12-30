@@ -22,7 +22,6 @@ public class DemoBox {
         Box box = new Box();
         box.getData();
         box.putData();
-        System.out.println();
         Box box1 = new Box();
         box1.getData();
         box1.putData();
